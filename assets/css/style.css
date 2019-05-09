@@ -1,5 +1,11 @@
 .bg {
-    background-image: url(../images/cookie-cat.png)
+    background: url(https://i.pinimg.com/originals/23/68/12/2368124616ff473bd4ccbadc73b6b546.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    /* background-color: rgba(240, 72, 55, .75);
+    background-blend-mode: screen; */
 }
 
 .card {
@@ -10,6 +16,15 @@
     font-weight: 200;
 }
 
+#gems-title {
+    width: 500px;
+}
+
 img {
     width: 100%;
+}
+
+.jumbotron {
+    background: transparent;
+    height: 300px;
 }

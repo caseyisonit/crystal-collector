@@ -1,24 +1,61 @@
+$(document).ready(function() {
+    
 // Global Variables wins, loses, target score, your score
-var randomNum = generateRandom();
-// var crystals = document.getElementsByClassName(".crystals")
-var garnetImg = document.getElementById("#garnet")
-var amethystImg = document.getElementById("#amethyst")
-var pearlImg = document.getElementById("#pearl")
-var stevenImg = document.getElementById("#steven")
+var wins = 0;
+var losses = 0;
+var target = Math.floor((Math.random() * 120) + 19);
+var score = 0;
 
-//array of crystal opject (to loop through)
-var crystalArray = []
+$('#wins').text(wins);
+$('#losses').text(losses);
+$('#target').text(target);
+$('#score').text(score);
+
 
 //dynamically create crystals on the page (one object per crystal)
-    //each crystal needs a score, an image, [aka a string holding the path to the image - which is saved in a folder in your project] an object with all of this info (aka collection of key value parts)
+//each crystal needs a score, an image, [aka a string holding the path to the image - which is saved in a folder in your project] an object with all of this info (aka collection of key value parts)
 var garnet = {
-    Score: "0",
+    score: Math.floor((Math.random() * 12) + 1), //set to run or pull the randomNum function
 }
 console.log (garnet)
 
+var amethyst = {
+    score: Math.floor((Math.random() * 12) + 1),
+}
+console.log (amethyst)
+
+var pearl = {
+    score: Math.floor((Math.random() * 12) + 1),
+}
+console.log (pearl)
+
+var steven = {
+    score: Math.floor((Math.random() * 12) + 1),
+}
+console.log (steven)
+
+$('#garnet').text(garnet);
+$('#amethyst').text(amethyst);
+$('#pearl').text(pearl);
+$('#steven').text(steven);
+
 // Random number Function: 
-function generateRandom(){}
-    //something with math...
+// function generateRandom(){
+//     randomNum = Math.floor((Math.random() * 12) + 1)
+//     console.log (randomNum)
+// }
+
+// function crystalScore(){
+//     for(var i = 0; i < crystalArray.length; i++) {
+//         crystalArray[i].score = text.generateRandom(0);
+//     }
+//     }
+
+
+});
+
+
+//something with math...
     //return a random number
 
 //Click event function
