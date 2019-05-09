@@ -3,7 +3,7 @@ $(document).ready(function() {
 // Global Variables wins, loses, target score, your score
 var wins = 0;
 var losses = 0;
-var target = Math.floor((Math.random() * 120) + 19);
+var target = generateTarget();
 var score = 0;
 
 $('#wins').text(wins);
@@ -14,42 +14,31 @@ $('#score').text(score);
 
 //dynamically create crystals on the page (one object per crystal)
 //each crystal needs a score, an image, [aka a string holding the path to the image - which is saved in a folder in your project] an object with all of this info (aka collection of key value parts)
-var garnet = {
-    score: Math.floor((Math.random() * 12) + 1), //set to run or pull the randomNum function
-}
-console.log (garnet)
-
-var amethyst = {
-    score: Math.floor((Math.random() * 12) + 1),
-}
-console.log (amethyst)
-
-var pearl = {
-    score: Math.floor((Math.random() * 12) + 1),
-}
-console.log (pearl)
-
-var steven = {
-    score: Math.floor((Math.random() * 12) + 1),
-}
-console.log (steven)
+var garnet = {score: crystalScore()}
+var amethyst = {score: crystalScore()}
+var pearl = {score: crystalScore()}
+var steven = {score: crystalScore()}
 
 $('#garnet').text(garnet);
 $('#amethyst').text(amethyst);
 $('#pearl').text(pearl);
 $('#steven').text(steven);
 
-// Random number Function: 
-// function generateRandom(){
-//     randomNum = Math.floor((Math.random() * 12) + 1)
-//     console.log (randomNum)
-// }
+console.log (garnet)
+console.log (amethyst)
+console.log (pearl)
+console.log (steven)
 
-// function crystalScore(){
-//     for(var i = 0; i < crystalArray.length; i++) {
-//         crystalArray[i].score = text.generateRandom(0);
-//     }
-//     }
+// Random number Function: 
+function generateTarget(){
+    randomNum = Math.floor((Math.random() * 121) + 19)
+    return randomNum;
+}
+
+function crystalScore(){
+    randomNum = Math.floor((Math.random() * 12) + 1)
+    return randomNum;
+}
 
 
 });
