@@ -21,27 +21,106 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-<header>
-    <div class="jumbotron text-center">
-        <h1 class="display-4">Crystal Collector</h1>
-        <p class="lead">Cookie Cat</p>
-        <hr class="my-4">
+<body class="bg">
+    <header>
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Crystal Collector</h1>
+            <p class="lead">Cookie Cat</p>
+        </div>
+    </header>
+    <div class="container">
+
         <div class="row">
-            <div class="col-md-12">
-                <p>You will be given a random number at the start of the game</p>
-                <p>There are four crystals below. By clicking ona crystal you will add a specific amount of points to your total score.</p>
-                <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
-                
-            </div>
+            <b-col class="col-md-3">
+                <img src="assets/images/garnet.png" class="crystals" id="garnet"></img>
+            </b-col>
+            <b-col class="col-md-3">
+                <img src="assets/images/amethyst.png" class="crystals" id="amethyst"></img>
+            </b-col>
+            <b-col class="col-md-3">
+                <img src="assets/images/pearl.png" class="crystals" id="pearl"></img>
+            </b-col>
+            <b-col class="col-md-3">
+                <img src="assets/images/steven.png" class="crystals" id="steven"></img>
+            </b-col>
+        </div>
+
+
+        <div class="row">
+            <b-col class="col-sm-6">
+
+                <div class="row">
+                    <b-col class="col-sm-6 text-center">
+                        <div class="card">
+                            <h3 class="card-header">Target Score</h3>
+                            <div class="card-body">
+                                <h2 class="card-title" id="target">-</h2>
+                            </div>
+                        </div>
+                    </b-col>
+
+                    <b-col class="col-sm-6 text-center">
+                        <div class="card">
+                            <h3 class="card-header">Your Score</h3>
+                            <div class="card-body">
+                                <h2 class="card-title" id="score">0</h2>
+                            </div>
+                        </div>
+                    </b-col>
+                </div>
+
+                <div class="row">
+                    <b-col class="col-sm-6 text-center">
+                        <div class="card">
+                            <h3 class="card-header">Wins</h3>
+                            <div class="card-body">
+                                <h2 class="card-title" id="wins">0</h2>
+                            </div>
+                        </div>
+                    </b-col>
+
+                    <b-col class="col-sm-6 text-center">
+                        <div class="card">
+                            <h3 class="card-header">Losses</h3>
+                            <div class="card-body">
+                                <h2 class="card-title" id="losses">0</h2>
+                            </div>
+                        </div>
+                    </b-col>
+                </div>
+
+            </b-col>
+
+            <b-col class="col-sm-6">
+
+                <div class="card">
+                    <h3 class="card-header">Instructions</h3>
+                    <div class="card-body">
+                        <p class="card-text">You will be given a random number at the start of the game</p>
+                        <p class="card-text">There are four crystals below. By clicking on a crystal you will add a
+                            specific amount of points to your total score.</p>
+                        <p class="card-text">You win the game by matching your total score to random number, you lose
+                            the game if your total score goes above the random number.</p>
+                        <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
+                        <p class="card-text">Each time when the game starts, the game will change the values of each
+                            crystal.</p>
+                    </div>
+                </div>
+
+            </b-col>
+
+            </>
+            <!-- <b-col class="col-sm-6">
+                <div class="card">
+                    <h3 class="card-header">Featured</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </b-col> -->
         </div>
     </div>
-</header>
-<div class="container">
-    
-</div>
 
     <script src="assets/javascript/game.js"></script>
 </body>
