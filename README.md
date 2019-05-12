@@ -1,8 +1,8 @@
-Crystal-Collector
+# Crystal-Collector
 
 Play the game Crystal Collector!
 
-Instructions
+## Instructions
 You will be given a random number at the start of the game. 
 
 There are four crystals. Clicking on a crystal will add a specific amount of points to your total user score. 
@@ -13,13 +13,13 @@ The value of each crystal is hidden until you click on it.
 
 Each time the game starts, the game will change the values of each crystal and game score.
 
-Technologies Used
+## Technologies Used
 jQuery
 Javascript
 Bootstrap
 
-Authors
+## Authors
 Casey Eickhoff - DU Women's Coding Bootcamp
 
-Acknowledgments
+## Acknowledgments
 DU Women's Coding Bootcamp
